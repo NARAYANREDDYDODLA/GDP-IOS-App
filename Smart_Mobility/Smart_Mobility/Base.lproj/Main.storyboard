@@ -500,6 +500,37 @@
             </objects>
             <point key="canvasLocation" x="2205.7971014492755" y="2288.8392857142858"/>
         </scene>
+        <!--Paynow View Controller-->
+        <scene sceneID="dGw-N5-Dnr">
+            <objects>
+                <viewController id="Pku-Zq-ax6" customClass="PaynowViewController" customModule="Smart_Mobility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HaZ-Be-ibC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrH-Oa-6zm">
+                                <rect key="frame" x="171" y="433" width="74" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Paynow"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ybk-Yr-Tux"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UrH-Oa-6zm" firstAttribute="top" secondItem="ybk-Yr-Tux" secondAttribute="top" constant="345" id="CSX-Aj-ya7"/>
+                            <constraint firstItem="UrH-Oa-6zm" firstAttribute="centerY" secondItem="HaZ-Be-ibC" secondAttribute="centerY" id="JXk-py-KRi"/>
+                            <constraint firstItem="UrH-Oa-6zm" firstAttribute="leading" secondItem="ybk-Yr-Tux" secondAttribute="leading" constant="171" id="U0F-gw-ckh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3wb-IX-4nL"/>
+                    <connections>
+                        <outlet property="btn_pay" destination="UrH-Oa-6zm" id="bxz-6S-s4t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yn5-TZ-x86" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4255" y="3883"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="bDV-Cc-H2s">
             <objects>
@@ -1035,6 +1066,9 @@
                                 <rect key="frame" x="142" y="341" width="107" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add Money"/>
+                                <connections>
+                                    <segue destination="Pku-Zq-ax6" kind="show" id="8ZD-UV-MnN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Available Money :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVr-Gi-iJX">
                                 <rect key="frame" x="38" y="160" width="141" height="34"/>

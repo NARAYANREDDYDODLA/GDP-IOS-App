@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247E2A0C28E760B0005289DC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247E2A0B28E760B0005289DC /* PassKit.framework */; };
 		2486BFF928E380A9000F776C /* StartRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486BFF828E380A8000F776C /* StartRideViewController.swift */; };
+		2486BFFC28E6243F000F776C /* PaynowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486BFFB28E6243F000F776C /* PaynowViewController.swift */; };
 		24DA6183283C3DCE004BE551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA6182283C3DCE004BE551 /* AppDelegate.swift */; };
 		24DA6185283C3DCE004BE551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA6184283C3DCE004BE551 /* SceneDelegate.swift */; };
 		24DA6187283C3DCE004BE551 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA6186283C3DCE004BE551 /* HomeViewController.swift */; };
@@ -75,7 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		247E2A0B28E760B0005289DC /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		2486BFF828E380A8000F776C /* StartRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRideViewController.swift; sourceTree = "<group>"; };
+		2486BFFA28E62238000F776C /* Smart_Mobility.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smart_Mobility.entitlements; sourceTree = "<group>"; };
+		2486BFFB28E6243F000F776C /* PaynowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaynowViewController.swift; sourceTree = "<group>"; };
 		24DA617F283C3DCE004BE551 /* Smart_Mobility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_Mobility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DA6182283C3DCE004BE551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DA6184283C3DCE004BE551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 				9E281C8428C90FBB00BD5AAE /* FirebaseRemoteConfig in Frameworks */,
 				9E281C6028C90FBB00BD5AAE /* FirebaseAppDistribution-Beta in Frameworks */,
 				9E281C6428C90FBB00BD5AAE /* FirebaseAuthCombine-Community in Frameworks */,
+				247E2A0C28E760B0005289DC /* PassKit.framework in Frameworks */,
 				9E281C8228C90FBB00BD5AAE /* FirebasePerformance in Frameworks */,
 				9E281C7A28C90FBB00BD5AAE /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				9E281C8828C90FBB00BD5AAE /* FirebaseStorage in Frameworks */,
@@ -154,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		247E2A0A28E760B0005289DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247E2A0B28E760B0005289DC /* PassKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		24DA6176283C3DCE004BE551 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +175,7 @@
 				24DA6198283C3DD0004BE551 /* Smart_MobilityTests */,
 				24DA61A2283C3DD0004BE551 /* Smart_MobilityUITests */,
 				24DA6180283C3DCE004BE551 /* Products */,
+				247E2A0A28E760B0005289DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +192,7 @@
 		24DA6181283C3DCE004BE551 /* Smart_Mobility */ = {
 			isa = PBXGroup;
 			children = (
+				2486BFFA28E62238000F776C /* Smart_Mobility.entitlements */,
 				24DA6182283C3DCE004BE551 /* AppDelegate.swift */,
 				24DA6184283C3DCE004BE551 /* SceneDelegate.swift */,
 				24DA6186283C3DCE004BE551 /* HomeViewController.swift */,
@@ -196,6 +212,7 @@
 				9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */,
 				9E919C2728D3917800498281 /* SettingsResultViewController.swift */,
 				2486BFF828E380A8000F776C /* StartRideViewController.swift */,
+				2486BFFB28E6243F000F776C /* PaynowViewController.swift */,
 			);
 			path = Smart_Mobility;
 			sourceTree = "<group>";
@@ -388,6 +405,7 @@
 				9E54102028DBEC8C00590E2C /* RideHistoryViewController.swift in Sources */,
 				24DA6187283C3DCE004BE551 /* HomeViewController.swift in Sources */,
 				9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */,
+				2486BFFC28E6243F000F776C /* PaynowViewController.swift in Sources */,
 				B1CE459D283D35300047EA35 /* SignInViewController.swift in Sources */,
 				B1CE45A1283D3D690047EA35 /* RentABikeViewController.swift in Sources */,
 				9E54102228DBED2000590E2C /* PersonalInfoViewController.swift in Sources */,
@@ -572,8 +590,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Smart_Mobility/Smart_Mobility.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7477W56TY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Smart_Mobility/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -600,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Smart_Mobility/Smart_Mobility.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
